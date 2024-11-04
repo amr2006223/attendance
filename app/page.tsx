@@ -11,7 +11,7 @@ const CheckPage: React.FC = () => {
   const handleCheckIn = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/attendance/checkin",
+        "http://192.168.1.14:5000/api/attendance/checkin",
         {
           method: "POST",
           headers: {
@@ -38,7 +38,7 @@ const CheckPage: React.FC = () => {
   const handleCheckout = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/attendance/checkout",
+        "http://192.168.1.14:5000/api/attendance/checkout",
         {
           method: "POST",
           headers: {
